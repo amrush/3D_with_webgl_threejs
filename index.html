@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> WebGL - Threejs </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+    body {
+        margin: 0px;
+        overflow: hidden;
+    }
+    
+    #test {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #btnMode {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        width: 170px;
+        height: 30px;
+        cursor: pointer;
+        background-color: #333333;
+        color: white;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        <button id="btnMode" onclick="toggleMode()">Toggle Mode (Normal/VR)</button>
+    </div>
+    <script src="node_modules/three/three.js"></script>
+    <script src="node_modules/three/examples/js/libs/stats.min.js"></script>
+    <!-- EFFECTS -->
+    <script src="node_modules/three/examples/js/effects/CardboardEffect.js"></script>
+    <script src="node_modules/three/examples/js/effects/VREffect.js"></script>
+    <script src="node_modules/three/examples/js/effects/StereoEffect.js"></script>
+    <script src="rift/OculusRiftEffect.js"></script>
+    <script src="node_modules/three/examples/js/effects/AnaglyphEffect.js"></script>
+    <!-- CONTROLS -->
+    <script src="node_modules/three/examples/js/controls/DeviceOrientationControls.js"></script>
+    <script src="node_modules/three/examples/js/controls/OrbitControls.js"></script>
+    <!-- GEOMETRY -->
+    <script src="node_modules/three/examples/js/geometries/hilbert3D.js"></script>
+    <script src="node_modules/three/examples/js/Detector.js"></script>
+    <!-- SHADERS -->
+    <script src="node_modules/three/examples/js/SkyShader.js"></script>
+    <!-- PROJECT SPECIFIC JS -->
+    <script src="js/textures.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/lights.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

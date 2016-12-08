@@ -1,0 +1,15 @@
+{
+  "name": "threejs-webgl-demo",
+  "version": "1.0.0",
+  "description": "You should have **Node.js** installed Or install it from https://nodejs.org/en/download/   Then from webgl-demo folder execute   ``` $ npm install ```",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.11.2",
+    "three": "^0.75.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
